@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/translate_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/language_type" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/translate" />
+
+        <Spinner
+            android:id="@+id/translate_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/language_type" />
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_decoration"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="翻译" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="start"
+        android:hint="输入查询"
+        android:id="@+id/input"
+        android:minLines="7"
+        android:background="@drawable/rectangle"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="选图"
+            android:id="@+id/getImage"
+            android:background="@drawable/button_decoration"
+            android:layout_margin="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="拍照"
+            android:id="@+id/camera"
+            android:background="@drawable/button_decoration"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="播放"
+            android:id="@+id/play"
+            android:background="@drawable/button_decoration"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle"
+        android:id="@+id/output"
+        android:layout_weight="1"/>
+</LinearLayout>

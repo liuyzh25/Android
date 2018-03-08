@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:background="@mipmap/pass_info_bk"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/name"
+        android:hint="如:网易、QQ"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            android:background="@mipmap/pass_info_bk"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/account"
+            android:hint="账号如：13727026983"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80sp"
+            android:background="@mipmap/pass_info_bk"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/password"
+            android:hint="密码:******"/>
+   </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+</LinearLayout>
