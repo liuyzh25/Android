@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">小智识别</string>
+    <string-array name="identify_ways">
+        <item>菜品识别</item>
+        <item>车型识别</item>
+        <item>动物识别</item>
+        <item>植物识别</item>
+    </string-array>
+</resources>
